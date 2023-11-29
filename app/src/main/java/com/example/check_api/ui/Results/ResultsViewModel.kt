@@ -8,10 +8,8 @@ import com.example.check_api.model.ResultsResponse
 class ResultsViewModel(
     private val repository: ResultsRepository = ResultsRepository(),
 ) : ViewModel() {
-
     fun getResult04(
-        successCallback:
-        (response: ResultsResponse?) -> Unit,
+        successCallback: (response: ResultsResponse?) -> Unit,
     ) {
         repository.getResult03 { response ->
             successCallback(response)
